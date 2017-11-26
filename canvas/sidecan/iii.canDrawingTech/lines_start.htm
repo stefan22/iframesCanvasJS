@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Drawing Lines</title>
+		<style type="text/css">
+			canvas {
+				border: dotted 1px black;
+			}
+		</style>
+		<script>
+			window.onload = function() {
+				// draw lines of varying widths
+				var can = document.getElementById('Canvas1');
+				if (can && can.getContext) {
+					var canx = can.getContext('2d');
+					
+					for(var i=0; i< 10; i++) {
+						
+						
+						canx.beginPath();
+						canx.lineWidth = 1 + i;
+						canx.moveTo(20,25+i);
+						canx.lineTo(80,80 + i);
+						//canx.strokeRect(20,20,80,80);
+						//or
+						canx.stroke();
+						
+						
+						
+						
+					}//for
+					
+				}//if
+			}
+		</script>
+	</head>
+	<body>
+		<h1>Drawing Lines</h1>
+		<p>This example will draw several styles of lines. First: basic line width</p>
+		<canvas id="Canvas1" width="500" height="200">Your browser does not support canvas.</canvas>
+
+		<p>Next: different settings for lineCap</p>
+		<canvas id="Canvas2" width="500" height="200">Your browser does not support canvas.</canvas>
+
+		<p>Next: different settings for lineJoin</p>
+		<canvas id="Canvas3" width="500" height="200">Your browser does not support canvas.</canvas>
+	</body>
+</html>

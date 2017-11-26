@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Saving and Restoring Canvas State</title>
+		<style type="text/css">
+			#Canvas1 {
+				border: dotted 1px black;
+			}
+		</style>
+		<script>
+			window.onload = function() {
+				var can = document.getElementById('Canvas1');
+				if (can && can.getContext) {
+					var canx = can.getContext("2d");
+					var canx2 = can.getContext("2d");
+					if (canx) {
+						//bg color
+						canx.fillStyle = "green";
+						//rect size
+						canx.fillRect(20,20,100,100);
+						//stroke
+						canx.lineWidth = 3;
+						canx.strokeStyle = 'brown';
+						canx.strokeRect(20,20,100,100);
+						
+						canx2.fillStyle = "red";
+						canx2.fillRect(133,20,300,300);
+					}
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<h1>Saving and Restoring the Canvas State</h1>
+		<p>This example shows how to manage the canvas state using save() and restore()</p>
+		<canvas id="Canvas1" width="500" height="300">Your browser does not support canvas.</canvas>
+	</body>
+</html>

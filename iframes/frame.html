@@ -1,0 +1,57 @@
+<!<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Untitled</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="author" href="humans.txt">
+    <style>
+    	.wrapper {width: 900px; margin:0 auto;}
+    	.res_iframe {
+    		width:100%; 
+    		height:auto; 
+    		position: relative;
+    	}
+    	.res_iframe iframe {
+    		border:none;
+    		max-width: 350px;
+    		height: auto;
+    		
+    	}
+    </style>
+    <script type="text/javascript">
+
+        function SetFrameBGToRed () {
+            debugger;
+            var frame = document.getElementById ("myFrame");
+            var frameDoc = frame.contentWindow.document;
+            frameDoc.body.style.backgroundColor = "red";
+        }
+
+    </script>    
+    </head>
+     <body>
+		<div class="wrapper">
+			<section id="topSection">
+				<h1>iFrame</h1>
+
+				<div class="res_iframe">
+			   	
+			   	
+                <iframe id="myFrame" src="testframes/frame1.htm" width="350px" height="250px"></iframe>
+
+
+			   	
+				
+				</div>
+                <button onclick="SetFrameBGToRed();">Set frame background to red
+                </button>
+                <p>This is an iframe</p>
+
+
+			</section>
+		</div>
+    </body>
+</html>

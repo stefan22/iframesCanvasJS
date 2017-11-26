@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Drawing Rectangles</title>
+		<style type="text/css">
+			#Canvas1 {
+				border: dotted 1px black;
+			}
+		</style>
+		<script>
+			window.onload = function() {
+				//stroked rectangle
+				var can = document.getElementById('Canvas1');
+				if (can && can.getContext) {
+					var canx = can.getContext("2d");
+					canx.lineWidth = 5;
+					canx.strokeStyle = 'yellow';
+					canx.strokeRect(50,50, 55, 55);
+				
+					canx.fillStyle = "green";
+					canx.fillRect(300,10, 25, 44);
+					
+					canx.lineWidth = 12;
+					canx.strokeStyle = 'black';
+					
+					canx.fillStyle = "green";
+					canx.fillRect(400,10, 25, 9);
+				
+				}
+				
+			
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+			}
+		</script>
+	</head>
+	<body>
+		<h1>Drawing Rectangles</h1>
+		<p>This example will draw several styles of rectangles</p>
+		<canvas id="Canvas1" width="500" height="300">
+				Your browser does not support canvas.
+	   </canvas>
+	</body>
+</html>
