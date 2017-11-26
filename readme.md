@@ -60,7 +60,7 @@
 
 <kbd>BOM</kbd>
 <br/>
-![](images/bom1.jpg)   
+![](iframes/images/bom1.jpg)   
 
 
 
