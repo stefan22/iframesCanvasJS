@@ -54,7 +54,7 @@
 - iframe-to-iframe
 
 <kbd>common iframe implementation</kbd>
-![](images/commonIframe.png)
+![](iframes/images/commonIframe.png)
 
 <br/>
 
