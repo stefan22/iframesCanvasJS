@@ -13,7 +13,7 @@
 - for things that you want to manipulate later using js, you'll use svg
 
 
-## canvas tag
+## canvas tag  &nbsp; :ocean:
 
 - the canvas coordinate system starts at the upper left, with increasing
   values of ***X*** going left to right, and increasing values of ***Y*** from
