@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Drawing Lines</title>
+      <style type="text/css">
+         canvas {
+            border: dotted 1px black;
+         }
+      </style>
+      <script>
+         window.onload = function() {
+            // draw lines of varying widths
+            var can = document.getElementById('Canvas1');
+            if (can && can.getContext) {
+               var canx = can.getContext("2d");
+               if (canx) {
+                 
+
+                  canx.lineWidth = 10;
+                  
+                     
+                  setTimeout(function() {
+                     
+                        canx.beginPath();
+                        canx.strokeStyle = 'blue';
+                        canx.moveTo(50,25);
+                        canx.lineTo(425, 150);
+                        canx.stroke();
+                        
+                        canx.beginPath();
+                        canx.strokeStyle = 'red';
+                        canx.moveTo(425, 150);
+                        canx.lineTo(50, 147);
+                        canx.stroke();
+                        canx.beginPath();
+                        
+                        canx.strokeStyle = 'green';
+                        canx.moveTo(50, 150);
+                        canx.lineTo(52, 25);
+                        canx.stroke();
+                        canx.beginPath();
+                        
+                        canx.strokeStyle = 'pink';
+                        canx.moveTo(50, 26);
+                        canx.lineTo(425, 29);
+                        canx.stroke();  
+                        canx.beginPath();
+                        
+                        canx.strokeStyle = 'yellow';
+                        canx.moveTo(425, 25);
+                        canx.lineTo(425, 150);
+                        canx.stroke();   
+                     
+                  
+                  
+                        canx.beginPath(); 
+                        //canx.strokeStyle = 'black';
+                        canx.fillStyle = "red";
+                        
+                        canx.moveTo(900,25);
+                        canx.lineTo(1200,25);
+                        canx.lineTo(1200, 300);
+                        canx.lineTo(900,300);
+                        canx.lineTo(900,25);
+                        canx.fill();
+                        //canx.closePath(); //or closePath()
+                        canx.stroke();
+                  
+                  },1000);
+                           
+               }//if
+               canx.beginPath(); 
+                        //canx.strokeStyle = 'black';
+                        canx.fillStyle = "red";
+                        canx.moveTo(900,25);
+                        canx.lineTo(1200,25);
+                        canx.lineTo(1200, 300);
+                        canx.lineTo(900,300);
+                        canx.lineTo(900,25);
+                        //canx.closePath(); //or closePath()
+                        canx.stroke();
+                              
+            }//if
+                
+            
+         }//onload
+      </script>
+   </head>
+   <body>
+      <h1>Drawing Lines</h1>
+      <p>This example will draw several styles of lines. First: basic line width</p>
+      <canvas id="Canvas1" width="1500" height="700">Your browser does not support canvas.</canvas>
+
+      <!-- <p>Next: different settings for lineCap</p>
+      <canvas id="Canvas2" width="500" height="200">Your browser does not support canvas.</canvas>
+
+      <p>Next: different settings for lineJoin</p>
+      <canvas id="Canvas3" width="500" height="200">Your browser does not support canvas.</canvas> -->
+   </body>
+</html>
