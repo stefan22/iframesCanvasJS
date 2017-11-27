@@ -12,26 +12,86 @@
 				// draw lines of varying widths
 				var can = document.getElementById('Canvas1');
 				if (can && can.getContext) {
-					var canx = can.getContext('2d');
+					var canx = can.getContext("2d");
+					if (canx) {
+						for (var i = 0; i < 10; i++){
+							setTimeout(function() {
+								canx.beginPath();
+								canx.lineWidth = 10
+								canx.moveTo(50, 25+i);
+								canx.lineTo(425, 150+i);
+								canx.stroke();
+								
+							},1000);
+							
+						}						
+					}
+					debugger;
+					if (canx) {
+						for (var h = 0; h < 10; h++){
+							setTimeout(function() {
+								canx.beginPath();
+								canx.lineWidth = 10;
+								canx.moveTo(425, 150+h);
+								canx.lineTo(50, 147+h);
+								canx.stroke();
+								
+								
+							},1040);
+							
+						}						
+					}
 					
-					for(var i=0; i< 10; i++) {
-						
-						
-						canx.beginPath();
-						canx.lineWidth = 1 + i;
-						canx.moveTo(20,25+i);
-						canx.lineTo(80,80 + i);
-						//canx.strokeRect(20,20,80,80);
-						//or
-						canx.stroke();
-						
-						
-						
-						
-					}//for
+					if (canx) {
+						for (var h = 0; h < 10; h++){
+							setTimeout(function() {
+								canx.beginPath();
+								canx.lineWidth = 10;
+								canx.moveTo(50, 150+h);
+								canx.lineTo(52, 25+h);
+								canx.stroke();
+								
+								
+							},1070);
+							
+						}						
+					}
 					
-				}//if
-			}
+					if (canx) {
+						for (var h = 0; h < 10; h++){
+							setTimeout(function() {
+								canx.beginPath();
+								canx.lineWidth = 10;
+								canx.moveTo(50, 26+h);
+								canx.lineTo(425, 29+h);
+								canx.stroke();
+								
+								
+							},1120);
+							
+						}						
+					}
+					
+					if (canx) {
+						for (var h = 0; h < 10; h++){
+							setTimeout(function() {
+								canx.beginPath();
+								canx.lineWidth = 10;
+								canx.moveTo(425, 25+h);
+								canx.lineTo(425, 150+h);
+								canx.stroke();
+								
+								
+							},1180);
+							
+						}						
+					}
+					
+				}
+				
+				
+				
+			}//onload
 		</script>
 	</head>
 	<body>
@@ -39,10 +99,10 @@
 		<p>This example will draw several styles of lines. First: basic line width</p>
 		<canvas id="Canvas1" width="500" height="200">Your browser does not support canvas.</canvas>
 
-		<p>Next: different settings for lineCap</p>
+		<!-- <p>Next: different settings for lineCap</p>
 		<canvas id="Canvas2" width="500" height="200">Your browser does not support canvas.</canvas>
 
 		<p>Next: different settings for lineJoin</p>
-		<canvas id="Canvas3" width="500" height="200">Your browser does not support canvas.</canvas>
+		<canvas id="Canvas3" width="500" height="200">Your browser does not support canvas.</canvas> -->
 	</body>
 </html>
