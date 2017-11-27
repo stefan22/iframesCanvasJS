@@ -1,4 +1,4 @@
-## canvas element
+## canvas element. &nbsp; :feet:
 
 - provides web pages with a drawing surface..for drawing:    
   graphics, shapes, images, text, etc
