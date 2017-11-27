@@ -1,4 +1,4 @@
-## canvas element. &nbsp; :feet:
+## canvas element. &nbsp; <kbd>:clipboard:</kbd>
 
 - provides web pages with a drawing surface..for drawing:    
   graphics, shapes, images, text, etc
@@ -13,7 +13,7 @@
 - for things that you want to manipulate later using js, you'll use svg
 
 
-## canvas tag  &nbsp; :ocean:
+## canvas tag  &nbsp; <kbd>:ocean:</kbd>
 
 - the canvas coordinate system starts at the upper left, with increasing
   values of ***X*** going left to right, and increasing values of ***Y*** from
